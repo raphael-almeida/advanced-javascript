@@ -22,3 +22,7 @@ const reduceResult = array.reduce((accumulator, num) => {
 });
 
 console.log('reduceResult', reduceResult);
+
+const array2 = [1,[2,3, 4,,,, [5]]];
+console.log('1 layer', array2.flat(1));
+console.log('2 layer', array2.flat(Infinity));
